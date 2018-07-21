@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	  <head>
+    	<meta charset="utf-8">
+    	<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ 	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    	<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    	<link rel="stylesheet" href="../static/khaled.css">
+    	<title>Personal WebSite</title>
+  	</head>
+  	
+
+  	<body>
+		<div class="box">
+  			<img id="jakousy" src="https://scontent.fgza1-1.fna.fbcdn.net/v/t1.0-9/36990655_1734020766713652_1034090187707121664_n.jpg?_nc_cat=0&oh=3f00de5fa70910cb7ace8a7cd4badeee&oe=5BD3D02C" alt="" class="box-img">
+  			<h1> Khaled AlGhifary</h1>
+			<h3 id="header" onmouseover="mouseOver()" onmouseout="mouseOut()">Three facts about me:</h3>
+			
+			<ul >
+				<li id="fb" onmouseover="mouseOver()" onmouseout="mouseOut()" >1- I do love cats specially the black ones. </li>
+				<li id ="insta" onmouseover="mouseOver()" onmouseout="mouseOut()">2- I have the ability to speak three languages. </li>
+				<li id="yout" onmouseover="mouseOver()" onmouseout="mouseOut()">3- My future son has an account on Facebook.</li>					
+				<li><a href="https://www.facebook.com/Khaled.Al.Ghifary25" target = "blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+			</ul>
+			<h6> My favourite song:</h6>
+		<iframe width="100" height="100" src="https://www.youtube.com/embed/1ypU7_Cjrzg?autoplay=1" frameborder="5"></iframe>
+		<div class="container">
+		<div class="btn-group">
+		<button type="button" onclick=changeText()  class="btn btn-danger" >Change the topic</button>
+		<button type="button" onclick=changePic()  class="btn btn-danger" >Change the picture</button>
+
+			
+
+			<script >
+				alert("Hi there this is an introduction about me");
+
+				function changeText(){
+					document.getElementById("header").innerHTML = "My favourite Websites:";
+					document.getElementById("fb").innerHTML = "1-Facebook";
+					document.getElementById("insta").innerHTML = "2-Instagram";
+					document.getElementById("yout").innerHTML = "3-Youtube";
+				}
+				function changePic(){
+					document.getElementById("jakousy").src = "https://scontent.fgza1-1.fna.fbcdn.net/v/t1.0-9/10933714_700149306767475_55851873049360184_n.jpg?_nc_cat=0&oh=04fdefba4e0093dca9cd944b5ca6911d&oe=5BE9AA8A";
+
+				}
+				function mouseOver() {
+   					document.getElementById("header").style.color = "red";
+   					document.getElementById("fb").style.color = "red";
+   					document.getElementById("insta").style.color = "red";
+   					document.getElementById("yout").style.color = "red";
+				}
+
+				function mouseOut() {
+    				document.getElementById("header").style.color = "white";
+    				document.getElementById("fb").style.color = "white";
+    				document.getElementById("insta").style.color = "white";
+    				document.getElementById("yout").style.color = "white";
+				}
+			
+			</script>
+		</div>
+	</body>
+</html>
+
